@@ -1,0 +1,28 @@
+{
+  "name": "firefox-en-translation",
+  "version": "0.1.0",
+  "description": "Firefox 英文网页翻译插件：提取文章 → 转换为 Markdown → AI 翻译 → 打字机展示",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "start /b vite build --watch && start /b vite build --config vite.content.config.ts --watch && start /b vite build --config vite.background.config.ts --watch",
+    "build": "vite build && vite build --config vite.content.config.ts && vite build --config vite.background.config.ts"
+  },
+  "dependencies": {
+    "@mozilla/readability": "^0.6.0",
+    "md-wx": "^1.0.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "turndown": "^7.2.4"
+  },
+  "devDependencies": {
+    "@types/firefox-webext-browser": "^143.0.0",
+    "@types/node": "^20.14.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@types/turndown": "^5.0.6",
+    "@vitejs/plugin-react": "^6.1.0",
+    "typescript": "^5.5.3",
+    "vite": "^8.2.2"
+  }
+}
